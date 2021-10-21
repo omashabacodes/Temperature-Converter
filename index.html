@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form class="form">
+            <label for="temp">Enter temperature:</label>
+            <input type="number" name="temp" id="temp" class="textbox" autofocus tabindex="1">
+            <br>
+            <h4>Enter current temperature unit:</h4>
+            <label for="celcius">Celcius</label>
+            <input type="radio" name="unit" value="celcius" id="celcius" tabindex="2">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="radio" name="unit" value="fahrenheit" id="fahrenheit" tabindex="3">
+            <br>
+            <button class="btn" id="convert" tabindex="4">convert</button>
+            <button class="btn" id="reset" tabindex="5">reset</button>
+        </form>
+        
+        <br>
+        <div class="result">
+            <h3>Result: </h3>
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+</html>

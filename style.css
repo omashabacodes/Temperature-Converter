@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: blue;
+    color: white;
+}
+
+.container {
+    border: 2px solid white;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    animation: spinner 0.5s infinite;
+    transition: all 0.5s linear;
+}
+
+/* animation */
+@keyframes spinner {
+    0% {
+        border-top: 2px solid red;
+    }
+    25% {
+        border-right: 2px solid blue;
+    }
+    50% {
+        border-bottom: 2px solid orange;
+    }
+    75% {
+        border-left: 2px solid purpleS;
+    }
+}
+
+.form {
+    padding: 1rem;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
+}
+
+#temp {
+    padding: 0.35rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: transparent;
+    color: white;
+}
+
+#celcius {
+    margin-right: 1rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#f09876;
+}
+
+.result {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+#result {
+    color: red;
+}
